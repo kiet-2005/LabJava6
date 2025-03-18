@@ -13,7 +13,8 @@ public class StreamAPI {
                 new Student("bin",false, 4.0),
                 new Student("thinh", true,6.0),
                 new Student("vy", false,8.0),
-                new Student("phong", true,10.0)
+                new Student("phong", true,10.0),
+                new Student("triet", false,9.0)
         );
     public static void main(String[] args) {
         // demo1();
@@ -57,7 +58,12 @@ public class StreamAPI {
         double min = list.stream().mapToDouble(sv -> sv.getMarks()).min().getAsDouble();
             System.out.println("Min:" + min);
         boolean all = list.stream().allMatch(sv -> sv.getMarks() >= 5);
-            System.out.println("All:" + all);
+        if (all == true) {
+            System.out.println("All: Pass");
+        } else {
+            System.out.println("All: False");
+        }
+            
         Student min_sv = list.stream().reduce(list.get(0), (minsv, sv) -> sv.getMarks() < minsv.getMarks() ? sv : minsv);
             System.out.println("Min:" + min_sv.getName());
     }
