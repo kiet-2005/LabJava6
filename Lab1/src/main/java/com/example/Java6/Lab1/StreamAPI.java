@@ -9,11 +9,11 @@ import com.example.Java6.Entity.Student;
 
 public class StreamAPI {
     static List<Student> list = Arrays.asList(
-                new Student("qwertyuiop", true,2.0),
-                new Student("asdfghjkl",false, 4.0),
-                new Student("zxcvbnm", true,6.0),
-                new Student("qazwsx", false,8.0),
-                new Student("edcrfv", true,10.0)
+                new Student("kiet", true,2.0),
+                new Student("bin",false, 4.0),
+                new Student("thinh", true,6.0),
+                new Student("vy", false,8.0),
+                new Student("phong", true,10.0)
         );
     public static void main(String[] args) {
         // demo1();
@@ -56,6 +56,10 @@ public class StreamAPI {
             System.out.println("Sum:" + sum);
         double min = list.stream().mapToDouble(sv -> sv.getMarks()).min().getAsDouble();
             System.out.println("Min:" + min);
+        boolean all = list.stream().allMatch(sv -> sv.getMarks() >= 5);
+            System.out.println("All:" + all);
+        Student min_sv = list.stream().reduce(list.get(0), (minsv, sv) -> sv.getMarks() < minsv.getMarks() ? sv : minsv);
+            System.out.println("Min:" + min_sv.getName());
     }
 
 }
