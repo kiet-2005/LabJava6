@@ -11,7 +11,9 @@ public class StreamAPI {
     static List<Student> list = Arrays.asList(
                 new Student("qwertyuiop", true,2.0),
                 new Student("asdfghjkl",false, 4.0),
-                new Student("zxcvbnm", true,6.0)
+                new Student("zxcvbnm", true,6.0),
+                new Student("qazwsx", false,8.0),
+                new Student("edcrfv", true,10.0)
         );
     public static void main(String[] args) {
         // demo1();
