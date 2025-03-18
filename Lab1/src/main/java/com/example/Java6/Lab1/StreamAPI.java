@@ -49,9 +49,11 @@ public class StreamAPI {
 
     public static void demo4(){
         double average = list.stream().mapToDouble(sv -> sv.getMarks()).average().getAsDouble();
-        list.forEach(sv -> {
             System.out.println("Average:" + average);
-        });
+        double sum = list.stream().mapToDouble(sv -> sv.getMarks()).sum();
+            System.out.println("Sum:" + sum);
+        double min = list.stream().mapToDouble(sv -> sv.getMarks()).min().getAsDouble();
+            System.out.println("Min:" + min);
     }
 
 }
