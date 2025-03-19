@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img style="width: 200px" th:src="@{/photo/FPT_Polytechnic.png}">
+<nav th:replace="~{/lab2/layout/menu.html}"></nav>
+<h1 th:text="${message}"></h1>
+<ul th:object="${student2}">
+    <li th:text="${student2.name}"></li>
+    <li th:text="*{marks}"></li>
+    <li th:text="*{contact.email}"></li>
+</ul>
+</body>
+</html>

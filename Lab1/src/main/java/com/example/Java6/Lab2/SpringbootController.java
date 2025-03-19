@@ -11,7 +11,6 @@ public class SpringbootController {
     public String hello(Model model) {
         model.addAttribute("message", "FPT <b>Polytechnic</b>");
         System.out.println("Lab2");
-
         return "lab2/hello";
     }
 }

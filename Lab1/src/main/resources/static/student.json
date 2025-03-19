@@ -1,0 +1,13 @@
+{
+  "name": "Ngô Thị Yến Vy",
+  "gender": true,
+  "marks": 9,
+  "contact": {
+    "phone": "0987654321",
+    "email": "khongbiet123@gmail.com"
+  },
+  "subject": [
+    "SD19301",
+    "JAVA6"
+  ]
+}
