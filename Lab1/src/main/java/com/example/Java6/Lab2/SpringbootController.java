@@ -9,7 +9,7 @@ public class SpringbootController {
     @RequestMapping("/springboot")
     public String hello(Model model) {
         model.addAttribute("message", "hello");
-        System.out.println("hello");
+        System.out.println("Main");
         return "springboot";
     }
 }
