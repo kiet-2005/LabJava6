@@ -1,0 +1,10 @@
+{
+    "name": "Kiệt",
+    "gender": true,
+    "marks": 7.5,
+    "contact": {
+        "email": "kiet@gmail.com",
+        "phone": "0123456789"
+    },
+    "subject": ["WEB205", "COM108"]
+}
