@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Lambda",
+            "request": "launch",
+            "mainClass": "com.example.Java6.Lab1.Lambda",
+            "projectName": "Java6"
+        },
+        {
+            "type": "java",
+            "name": "Write",
+            "request": "launch",
+            "mainClass": "com.example.Java6.Lab1.Write",
+            "projectName": "Java6"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-Lab2Application<Lab2>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
