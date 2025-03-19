@@ -5,12 +5,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/lab2")
 public class SpringbootController {
-    @RequestMapping("/springboot")
+    @RequestMapping("/hello")
     public String hello(Model model) {
-        model.addAttribute("message", "hello");
-        System.out.println("Main");
+        model.addAttribute("message", "FPT <b>Polytechnic</b>");
+        System.out.println("Lab2");
 
-        return "springboot";
+        return "lab2/hello";
     }
 }
