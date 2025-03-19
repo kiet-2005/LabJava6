@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReadJson",
+            "request": "launch",
+            "mainClass": "com.example.Java6.Lab1.ReadJson",
+            "projectName": "Java6"
+        },
+        {
+            "type": "java",
             "name": "Lambda",
             "request": "launch",
             "mainClass": "com.example.Java6.Lab1.Lambda",
