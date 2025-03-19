@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Ngô Thị Yến Vy",
+    "gender": false,
+    "marks": 9,
+    "contact": {
+      "phone": "0987654321",
+      "email": "khongbiet123@gmail.com"
+    },
+    "subject": [
+      "SD19301",
+      "JAVA6"
+    ]
+  },
+  {
+    "name": "Huỳnh Anh Kiệt",
+    "gender": true,
+    "marks": 9.1,
+    "contact": {
+      "phone": "0987654322",
+      "email": "khongbiet1234@gmail.com"
+    },
+    "subject": [
+      "SD19302",
+      "JAVA7"
+    ]
+  },
+  {
+    "name": "Võ Thanh Bin",
+    "gender": true,
+    "marks": 9,
+    "contact": {
+      "phone": "0987654323",
+      "email": "khongbiet1235@gmail.com"
+    },
+    "subject": [
+      "SD19301",
+      "JAVA6"
+    ]
+  },
+  {
+    "name": "Phạm Thịnh Quang",
+    "gender": true,
+    "marks": 9,
+    "contact": {
+      "phone": "0987654325",
+      "email": "khongbiet1235@gmail.com"
+    },
+    "subject": [
+      "SD19302",
+      "JAVA7",
+      "JAVA8"
+    ]
+  },
+  {
+    "name": "Võ Minh Triết",
+    "gender": true,
+    "marks": 9.3,
+    "contact": {
+      "phone": "0987654324",
+      "email": "khongbiet1215@gmail.com"
+    },
+    "subject": [
+      "SD19301",
+      "JAVA6"
+    ]
+  }
+]
