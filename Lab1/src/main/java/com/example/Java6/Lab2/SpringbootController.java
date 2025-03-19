@@ -10,6 +10,7 @@ public class SpringbootController {
     public String hello(Model model) {
         model.addAttribute("message", "hello");
         System.out.println("Main");
+
         return "springboot";
     }
 }
