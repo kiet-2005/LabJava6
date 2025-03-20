@@ -4,16 +4,18 @@ import java.io.File;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.core.io.ClassPathResource;
 
 public class ReadJson {
     public static void main(String[] args) throws Exception{
-        // demo1();
+//         demo1();
         demo2();
     }
     public static void demo1() throws Exception{
-        String json = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\student.json";
+//        String json = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\student.json";
+        ClassPathResource json = new ClassPathResource("static/student.json");
         ObjectMapper mapper = new ObjectMapper();
-        JsonNode student = mapper.readTree(new File(json));
+        JsonNode student = mapper.readTree(json.getInputStream());
 
         System.out.println("Name: " + student.get("name").asText());
         System.out.println("Gender: " + student.get("gender").asBoolean());
@@ -25,9 +27,9 @@ public class ReadJson {
         });
     }
     public static void demo2() throws Exception{
-        String path = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\students.json";
+        ClassPathResource json = new ClassPathResource("static/students.json");
         ObjectMapper mapper = new ObjectMapper();
-        JsonNode student = mapper.readTree(new File(path));
+        JsonNode student = mapper.readTree(json.getInputStream());
         student.iterator().forEachRemaining( s -> {
             System.out.println("Name: " + s.get("name").asText());
         });

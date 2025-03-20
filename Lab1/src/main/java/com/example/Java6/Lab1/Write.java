@@ -7,17 +7,19 @@ import java.util.Map;
 import com.example.Java6.Entity.Contact;
 import com.example.Java6.Entity.Student2;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.core.io.ClassPathResource;
 
 public class Write {
     public static void main(String[] args) throws Exception{
-        // demo1();
-        // demo2();
-        demo3();
+//         demo1();
+         demo2();
+//        demo3();
     }
     public static void demo1() throws Exception{
-        String path = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\student.json";
+//        String path = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\student.json";
+        ClassPathResource json = new ClassPathResource("static/student.json");
         ObjectMapper mapper = new ObjectMapper();
-        Map<String, Object> student = mapper.readValue(new File(path), Map.class);
+        Map<String, Object> student = mapper.readValue(json.getInputStream(), Map.class);
 
         System.out.println("Name: " + student.get("name"));
         System.out.println("Marks: " + student.get("marks"));
@@ -31,17 +33,18 @@ public class Write {
         });
     }
     public static void demo2() throws Exception{
-        String path = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\students.json";
+        ClassPathResource json = new ClassPathResource("static/students.json");
         ObjectMapper mapper = new ObjectMapper();
-        List<Map<String, Object>> student = mapper.readValue(new File(path), List.class);
+        List<Map<String, Object>> student = mapper.readValue(json.getInputStream(), List.class);
         student.forEach( s -> {
             System.out.println("Name: " + s.get("name"));
         });
     }
     public static void demo3() throws Exception{
-        String path = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\student.json";
+//        String path = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\student.json";
+        ClassPathResource json = new ClassPathResource("static/student.json");
         ObjectMapper mapper = new ObjectMapper();
-        Student2 students = mapper.readValue(new File(path), Student2.class);
+        Student2 students = mapper.readValue(json.getInputStream(), Student2.class);
         System.out.println("Name: " + students.getName());
         System.out.println("Marks: " + students.getMarks());
         System.out.println("gender: " + students.getGender());

@@ -17,10 +17,10 @@ public class StreamAPI {
                 new Student("triet", false,9.0)
         );
     public static void main(String[] args) {
-        // demo1();
-        // demo2();
-        // demo3();
-        demo4();
+//         demo1();
+//         demo2();
+//         demo3();
+//         demo4();
     }
 
     public static void demo1() {

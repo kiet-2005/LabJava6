@@ -14,10 +14,10 @@ public class Lambda {
                 new Student("D", false,4.3)
         );
     public static void main(String[] args) {
-        // demo1();
-        // demo2();
-        // demo3();
-        demo4();
+         demo1();
+//         demo2();
+//         demo3();
+//         demo4();
     }
     public static void demo1(){
         List<Integer> list = Arrays.asList(1,9,4,7,5,2);
