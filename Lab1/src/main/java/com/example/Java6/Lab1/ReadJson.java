@@ -8,10 +8,11 @@ import org.springframework.core.io.ClassPathResource;
 
 public class ReadJson {
     public static void main(String[] args) throws Exception{
-//         demo1();
+         demo1();
         demo2();
     }
     public static void demo1() throws Exception{
+        System.out.println("Demo1 ====================");
 //        String json = "E:\\Java6\\LabJava6\\Lab1\\src\\main\\java\\com\\example\\json\\student.json";
         ClassPathResource json = new ClassPathResource("static/student.json");
         ObjectMapper mapper = new ObjectMapper();
@@ -27,6 +28,7 @@ public class ReadJson {
         });
     }
     public static void demo2() throws Exception{
+        System.out.println("Demo2 ====================");
         ClassPathResource json = new ClassPathResource("static/students.json");
         ObjectMapper mapper = new ObjectMapper();
         JsonNode student = mapper.readTree(json.getInputStream());

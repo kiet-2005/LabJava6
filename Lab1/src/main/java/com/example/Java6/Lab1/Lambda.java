@@ -15,16 +15,18 @@ public class Lambda {
         );
     public static void main(String[] args) {
          demo1();
-//         demo2();
-//         demo3();
-//         demo4();
+         demo2();
+         demo3();
+         demo4();
     }
     public static void demo1(){
+        System.out.println("Demo1 ====================");
         List<Integer> list = Arrays.asList(1,9,4,7,5,2);
         list.forEach(n -> System.out.println(n));
     }
 
     public static void demo2(){
+        System.out.println("Demo2 ====================");
         list.forEach(sv -> {
             System.out.println("Name:" + sv.getName());
             
@@ -39,6 +41,7 @@ public class Lambda {
     }
 
     public static void demo3(){
+        System.out.println("Demo3 ====================");
         Collections.sort(list, (Student sv1, Student sv2) -> -sv1.getMarks().compareTo(sv2.getMarks()));
         list.forEach(sv -> {
             System.out.println("Name:" + sv.getName());
@@ -54,6 +57,7 @@ public class Lambda {
     }
 
     public static void demo4(){
+        System.out.println("Demo4 ====================");
         Demo4Inter d = x -> System.out.println(x);
         d.m1(10);
     }
